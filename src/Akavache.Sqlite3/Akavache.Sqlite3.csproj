@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Akavache.Sqlite3</AssemblyName>
+		<TargetFrameworks>netstandard2.0;</TargetFrameworks>
+		<AssemblyName>Akavache.Sqlite3</AssemblyName>
     <RootNamespace>Akavache.Sqlite3</RootNamespace>
     <Description>Akavache Sqlite3</Description>
     <PackageId>akavache.sqlite3</PackageId>
@@ -17,8 +17,7 @@
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="1.1.11" />
-    <PackageReference Include="SQLitePCLRaw.core" Version="1.1.11" />
+		<PackageReference Include="SQLitePCLRaw.core" Version="1.1.11" />
 		<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
 		<PackageReference Include="System.Reactive" Version="[3.1.1,4)" />
 		<PackageReference Include="Splat" Version="4.0.0" />
@@ -33,10 +32,6 @@
     <None Remove="sqlite-ng-notes.md" />
     <None Remove="sqlite3-hint.txt" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\Akavache.Core\Akavache.Core.csproj" />
-  </ItemGroup>
 
 
   <ItemGroup>
@@ -48,6 +43,11 @@
       <PackagePath>contentFiles\cs\any\</PackagePath>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Akavache.Core\Akavache.Core.csproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" />
