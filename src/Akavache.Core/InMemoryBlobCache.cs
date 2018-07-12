@@ -20,9 +20,9 @@ namespace Akavache
     /// </summary>
     public class InMemoryBlobCache : ISecureBlobCache, IObjectBlobCache, IEnableLogger
     {
-        public InMemoryBlobCache() : this(null, null)
-        {
-        }
+//        public InMemoryBlobCache(System.Reactive.Concurrency.IScheduler taskpoolScheduler) : this(null, null)
+//        {
+//        }
 
         public InMemoryBlobCache(IScheduler scheduler) : this(scheduler, null)
         {
