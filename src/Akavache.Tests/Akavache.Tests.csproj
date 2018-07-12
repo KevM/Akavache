@@ -20,7 +20,6 @@
     <PackageReference Include="ReactiveUI.Testing" Version="8.2.1" />
     <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.v110_xp" Version="1.1.11" />
 		<PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
-		<PackageReference Include="System.Reactive" Version="[3.1.1,4)" />
 		<PackageReference Include="Splat" Version="4.0.0" />
   </ItemGroup>
 
